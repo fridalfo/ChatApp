@@ -1,0 +1,123 @@
+.chatRoom{
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 0em 1em 1em 0em;
+    position: relative;
+}
+.chatRoomHeader{
+    background-color: white;
+    border-top-right-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    padding: 0px 10px;
+    height: 50px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.minimizeButton{
+    cursor: pointer;
+    padding: 0px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+}
+
+.minimizeButton:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.chatRoomHeader h1{
+    font-size: 1rem;
+   
+}
+
+/* Chat Input Box */
+.inputArea{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inputBox{
+    width: 100%;
+}
+
+.inputBox input{
+    height: auto;
+    width: 100%;
+    border : none;
+    font-size: 0.7em;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    height: 40px;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.05);
+}
+
+input:focus {outline:0;}
+
+.inputButton{
+    cursor: pointer;
+    display: block;
+    border:none;
+    background-color: rgb(0, 128, 0);
+    box-shadow: 1px 5px 5px rgba(0, 128, 0,0.3);
+    width: 48px !important;
+    
+    height: 40px;
+    border-radius: 40px;
+    color: white;
+    margin-left: 5px;
+}
+
+/* Chat Bubble */
+
+.chatBubbleList{
+    padding: 0 10px ;
+    padding-bottom: 60px;
+    margin: 3px 0;
+    height: 400px ;
+    overflow-y: scroll;
+}
+
+.chatBubble{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatBubble.cb-right{
+    align-items: flex-end;
+}
+
+.cb-right .cb-name{
+    margin-right: 10px;
+}
+
+.cb-left .cb-name{
+    margin-left: 10px;
+}
+
+.cb-name{
+    
+    font-size: .7em;
+    font-weight: 800;
+}
+
+.cb-text{
+    max-width: 200px;
+    font-size: .7em;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: .7em;
+    line-height: 1.4em;
+}
+
+
